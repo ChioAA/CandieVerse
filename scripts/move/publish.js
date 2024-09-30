@@ -12,7 +12,6 @@ async function publish() {
   }
 
   const move = new cli.Move();
-
   move
     .createObjectAndPublishPackage({
       packageDirectoryPath: "move",
@@ -25,7 +24,7 @@ async function publish() {
         // Our contract depends on the token-minter contract to provide some common functionalities like managing refs and mint stages
         // You can read the source code of it here: https://github.com/aptos-labs/token-minter/
         // Please find it on the network you are using, This is testnet deployment
-        minter: "0xab6c63c4d6b55779b2ee0fa096204da62f1e0ec0117c5fb12beb9d6469437485",
+        minter: "0x7dd1e572fc186e4350c5ce90f8b0f9d7e782bb318ed6df094142ccb112e34d71",
       },
       profile: `${process.env.PROJECT_NAME}-${process.env.VITE_APP_NETWORK}`,
     })

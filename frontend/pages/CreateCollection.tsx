@@ -19,7 +19,8 @@ import { DateTimeInput } from "@/components/ui/date-time-input";
 import { ConfirmButton } from "@/components/ui/confirm-button";
 // Entry functions
 import { createCollection } from "@/entry-functions/create_collection";
-
+import FilmCard from "./Mint/components/FilmCard";
+import Juno from "@/assets/movies/juno.mp4"
 export function CreateCollection() {
   // Wallet Adapter provider
   const aptosWallet = useWallet();
@@ -131,6 +132,7 @@ export function CreateCollection() {
       <LaunchpadHeader title="Create New Collection" />
 
       <div className="flex flex-col md:flex-row items-start justify-between px-4 py-2 gap-4 max-w-screen-xl mx-auto">
+      <FilmCard title={"Juno"} previewVideoUrl={Juno}/>
         <div className="w-full md:w-2/3 flex flex-col gap-y-4 order-2 md:order-1">
           {(!account || account.address !== CREATOR_ADDRESS) && (
             <WarningAlert title={account ? "Wrong account connected" : "No account connected"}>

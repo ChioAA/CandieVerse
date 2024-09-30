@@ -14,6 +14,9 @@ module.exports = {
       },
     },
     extend: {
+      backgroundImage:{
+        'hero-pattern':"url('/frontend/assets/icons/Topographic4.svg')"
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -71,7 +74,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ["sans-serif"],
-        inter: ["Inter", "sans-serif"],
+        work: ["Work Sans", "sans-serif"],
       },
       fontSize: {
         12: "0.75rem",

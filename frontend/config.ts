@@ -1,7 +1,6 @@
 import Placeholder1 from "@/assets/placeholders/bear-1.png";
 import Placeholder2 from "@/assets/placeholders/bear-2.png";
 import Placeholder3 from "@/assets/placeholders/bear-3.png";
-
 export const config: Config = {
   // TODO: Fill in your collection id
   collection_id: "",
@@ -14,7 +13,7 @@ export const config: Config = {
   },
 
   defaultCollection: {
-    name: "Lorem Ipsum",
+    name: "candieverse",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue convallis augue in pharetra.",
     image: Placeholder1,
   },

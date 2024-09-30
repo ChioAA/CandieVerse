@@ -1,6 +1,6 @@
 import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
 
-import { Mint } from "@/pages/Mint";
+import { Mint } from "@/components";
 import { CreateCollection } from "@/pages/CreateCollection";
 import { MyCollections } from "@/pages/MyCollections";
 
@@ -25,7 +25,6 @@ const router = createBrowserRouter([
         element: <CreateCollection />,
       },
       {
-        path: "my-collections",
         element: <MyCollections />,
       },
     ],
